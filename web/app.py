@@ -29,7 +29,7 @@ def course_detail():
 
 @app.route("/blogs")
 def blogs():
-    return render_template("edusmart/course-details.html")
+    return render_template("edusmart/blog.html")
     # return render_template("edusmart/courses.html")
 
 @app.route("/single_blog")
@@ -43,6 +43,10 @@ def elements():
 @app.route("/bases/map")
 def bases_map():
     return render_template("bases/map.html")
+
+@app.route("/english_corner")
+def english_corner():
+    return render_template("edusmart/english_corner.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port=5180)
