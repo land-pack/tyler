@@ -40,6 +40,9 @@ def single_blog():
 def elements():
     return render_template("edusmart/elements.html")
 
+@app.route("/bases/map")
+def bases_map():
+    return render_template("bases/map.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port=5180)
